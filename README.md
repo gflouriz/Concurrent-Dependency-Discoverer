@@ -10,5 +10,7 @@ For very large software systems, a singly-threaded application to crawl the sour
 
 The key data structures, data flows, and threads in the concurrent version are shown in the figure below. This is a common master/worker concurrency pattern. The main thread (master) places file names to be processed in the work queue. Worker threads select a file name from the work queue, scan the file to discover dependencies, add these dependencies to the result Hash Map and, if new to the work queue.
 
+<img src="data.png" alt = Data Structures, Data Flows and Threads/> 
+
 It is possible to adjust the number of worker threads to process the accumulated work queue in order to speed up the processing.  Since the Work Queue and the Hash Map are shared between threads, concurrency control mechanisms were used to implement thread safe access.
 
