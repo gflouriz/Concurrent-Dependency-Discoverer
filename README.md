@@ -6,5 +6,5 @@ Some systems are extremely large and it is difficult to keep the dependencies in
 
 #include directives for system files (enclosed in < >) are normally NOT specified in dependencies.  Therefore, this system will focus on generating dependencies between source files and non-system #include directives (enclosed in “ ”).
 
-For very large software systems, a singly-threaded application to crawl the source files may take a very long time.  The final product should be a concurrent include file crawler in C++.
+For very large software systems, a singly-threaded application to crawl the source files may take a very long time.  The final program should be a concurrent include file crawler in C++.
 
