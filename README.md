@@ -14,3 +14,10 @@ The key data structures, data flows, and threads in the concurrent version are s
 
 It is possible to adjust the number of worker threads to process the accumulated work queue in order to speed up the processing.  Since the Work Queue and the Hash Map are shared between threads, concurrency control mechanisms were used to implement thread safe access.
 
+#Instructions To Run Locally On Enviroment with Appropirate C++ Compiler:
+-Downloads Repository
+-Compile the dependencyDiscoverer.cpp using $ make 
+-Unzip test folder
+-Move to test folder using $ cd test
+-$ ../dependencyDiscoverer *.y *.l *.c
+
